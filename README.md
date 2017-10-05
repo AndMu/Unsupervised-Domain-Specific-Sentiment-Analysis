@@ -2,9 +2,9 @@
 
 ## *pSenti* Lexicon system
 
-* Download [*pSenti*](AndMu/Wikiled.Sentiment/releases/tag/2.6.55) lexicon based utility
+* Download [*pSenti*](https://github.com/AndMu/Wikiled.Sentiment/releases/tag/2.6.55) lexicon based utility
 
-* Download [Sentiment resources](AndMu/Wikiled.Sentiment/src/Resources) 
+* Download [Sentiment resources](https://github.com/AndMu/Wikiled.Sentiment/src/Resources) 
 
 ## Python requirements
 
