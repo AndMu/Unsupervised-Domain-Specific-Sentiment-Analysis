@@ -4,7 +4,7 @@
 
 * Download [*pSenti*](https://github.com/AndMu/Wikiled.Sentiment/releases/tag/2.6.55) lexicon based utility
 
-* Download [Sentiment resources](https://github.com/AndMu/Wikiled.Sentiment/src/Resources) 
+* Download [Sentiment resources](https://github.com/AndMu/Wikiled.Sentiment/tree/master/src/Resources) 
 
 ## Python requirements
 
