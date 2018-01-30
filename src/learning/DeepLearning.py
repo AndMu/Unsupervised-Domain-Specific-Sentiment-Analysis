@@ -238,7 +238,7 @@ class WeightsLSTM(BaselineLSTM):
 
     def get_name(self):
         vector_size = self.loader.parser.word2vec.embedding_matrix.shape[1]
-        return self.loader.parser.word2vec.name + '_LTSM_Weights_' + str(self.time_steps) + "_" + str(vector_size)
+        return self.loader.parser.word2vec.name + '_LTSM_Weights_' + str(self.time_steps) + '_' + str(vector_size)
 
     def construct_ltsm_model(self, model):
         self.add_embeddings(model)
@@ -263,14 +263,14 @@ class DeepSklearnWrapper(BaseEstimator, ClassifierMixin):
     def fit(self, X, y):
         y = self.classifier.loader.convertor.create_vector(y)
         result = self.classifier.fit(X, y)
-        self.classifier.save("Multi_ " + str(self.classifier.counter))
+        self.classifier.save('Multi_' + str(self.classifier.counter))
         self.classes_ = self.classifier.get_classes(y)
         del self.classifier.model
         gc.collect()
         return result
 
     def predict_proba(self, X):
-        self.classifier.load("Multi_ " + str(self.classifier.counter))
+        self.classifier.load('Multi_' + str(self.classifier.counter))
         y = self.classifier.predict_proba(X)
         if len(self.classes_) == 2:
             y = Utilities.make_binary_prob(y)
